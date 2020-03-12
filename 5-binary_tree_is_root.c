@@ -1,6 +1,6 @@
 #include "binary_trees.h"
 /**
- *binary_tree_is_leaf - creates a bianry tree
+ *binary_tree_is_root - creates a bianry tree
  *@node: checks this node if its a leaf
  *Return: On success 1
  */

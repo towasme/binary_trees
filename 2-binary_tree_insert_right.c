@@ -1,6 +1,6 @@
 #include "binary_trees.h"
 /**
- *binary_tree_insert - creates a bianry tree
+ *binary_tree_insert_right - creates a bianry tree at right
  *@parent: The node to add to parent tree
  *@value: value the node will have
  *Return: On success 1
