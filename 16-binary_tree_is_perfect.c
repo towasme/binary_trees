@@ -42,6 +42,11 @@ return (maxdepth_r);
 }
 }
 
+/**
+*binary_tree_is_perfect - looks for a pefect tree
+*@tree: pounter to root
+*Return: On success 1
+*/
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	size_t height = 0, max_n = 0, x, size = 0, v = 2;
