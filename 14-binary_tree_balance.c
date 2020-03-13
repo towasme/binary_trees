@@ -1,10 +1,28 @@
 #include "binary_trees.h"
+#include "9-binary_tree_height.c"
+
 /**
-* * binary_tree_balance - looks for the depth of the tree
-* @tree: pointer to the node
-* Return: On success 1
-*/
+ * binary_tree_balance - check the balance factor
+ * @tree: pointer to tree root
+ * Return: balance of tree
+ */
 int binary_tree_balance(const binary_tree_t *tree)
 {
+	int result, Lef_tHeight, Right_Height;
 
+	if (!tree)
+	{return (0); }
+
+	if (tree->left)
+	{Lef_tHeight = binary_tree_height(tree->left) + 1; }
+	else
+	{LeftHeight = binary_tree_height(tree->left) + 0; }
+
+	if (tree->right)
+	{Righ_tHeight = binary_tree_height(tree->right) + 1; }
+	else
+	{Right_Height = binary_tree_height(tree->right) + 0; }
+
+	result = Left_Height - Right_Height;
+	return (result);
 }
